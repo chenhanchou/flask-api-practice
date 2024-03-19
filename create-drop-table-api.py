@@ -6,7 +6,7 @@ from flask import Flask, jsonify
 from flask.views import MethodView
 
 Base = declarative_base()
-engine_url = "mysql+pymysql://root:george0220@localhost:3306/test1"
+engine_url = "mysql+pymysql://root:root@localhost:3306/test1"
 engine = create_engine(engine_url, echo=True)
 
 class Test(Base):
